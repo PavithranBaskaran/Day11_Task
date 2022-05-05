@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      body {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+      }
+      .form {
+        border: 2px solid black;
+        height: 250px;
+        width: 450px;
+      }
+      .highlight {
+        font-style: italic;
+        font-size: 20px;
+      }
+      .header {
+        background-color: red;
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      h3 {
+        margin-top: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+      }
+      input {
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px groove black;
+        /* border: 20px; */
+        /* padding-bottom: 12px 20px; */
+      }
+      .part1 {
+        display: flex;
+      }
+      .part1 label {
+        width: 500px;
+        /* padding-top: 20px;
+    padding-right: 20px;
+    /* padding-bottom: 20px; */
+        /* padding-left: 20px; */
+        /* margin: 20px; */
+        margin-bottom: 5px;
+        margin-left: 19px;
+        margin-bottom: 5px;
+      }
+      .name {
+        width: 500px;
+        /* padding-top: 20px;
+    padding-right: 20px;
+    /* padding-bottom: 20px; */
+        /* padding-left: 20px; */
+        margin: 20px;
+        margin-bottom: 5px;
+      }
+
+      .address {
+        width: 400px;
+
+        margin: 20px;
+        margin-bottom: 5px;
+      }
+      .part2 label {
+        width: 500px;
+
+        margin-bottom: 5px;
+        margin-left: 19px;
+        margin-bottom: 5px;
+      }
+      .part3 input{
+          display: inline-flex;
+          width: 100px;
+          
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin: 20px;
+        /* margin-bottom: 5px; */
+      }
+
+      .part3 label{
+        width: 500px;
+
+margin-bottom: 5px;
+margin-left: 19px;
+margin-right: 90px;
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <section class="form">
+      <header class="header">
+        <h3>
+          Yes! I want to subscribe to <span class="highlight">Mag-O-Zine</span>
+        </h3>
+      </header>
+      <div class="part1">
+        <input type="text" name="Fname" class="name" />
+        <input type="text" name="Lname" class="name" />
+      </div>
+      <div class="part1">
+        <label>FirstName</label>
+        <label>LastName</label>
+      </div>
+      <div class="part2">
+        <input type="text" class="address" />
+        <label>Address</label>
+      </div>
+      <div class="part3">
+      <input type="text" name="city" />
+      <input type="text" name="state" />
+      <input type="text" name="zip" />
+     
+      <label>City</label>
+      <label>State</label>
+      <label>Zip</label>
+    </div>
+    
+    </section>
+  </body>
+</html>
